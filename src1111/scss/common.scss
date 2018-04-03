@@ -1,0 +1,36 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	font-size:16px;
+}
+ul{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+	color:#8e8e93;
+}
+input,button{
+	border:0;
+	outline:0;
+}
+
+
+.footer{
+	display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+	
+	a{
+		flex:1;
+		padding-top:5px;
+		padding-bottom:3px;
+		&.active{
+			color:#0089dc;
+		}
+	}
+}
