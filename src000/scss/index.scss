@@ -7,10 +7,8 @@
 		flex:1;
 		height:100%;
 		line-height: 40px;
-		overflow-x:scroll;
-		width:calc(100vw - 45px);
+		overflow:hidden;
 		.content{
-			white-space:nowrap;
 			a{
 				margin:3px 8px;
 				color:#fff;

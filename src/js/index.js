@@ -268,6 +268,7 @@ $(function(){
 		// 生成topCate头部菜单分类
 		let cateArr = category.data[category.firstCateIndex].sub_categories;
 		getTopCateHtml(cateArr);
+		autoWidth();
 		//将原有当前类取消
 		let liArr = document.querySelectorAll('.content-second ul li');
 		for(let k=0;k<=liArr.length-1;k++){
@@ -314,9 +315,14 @@ $(function(){
 
 		$('.top-cate-wrapper .content').html(topCateHtml);
 
+		autoWidth();
+	}
+
+	//动态计算头部菜单分类导航宽度
+	function autoWidth(){
 		let totalW = 0;
 		$('.top-cate-wrapper .content a').each(function(i){
-			totalW += $(this).outerWidth();
+			totalW += $(this).outerWidth()+16;
 		});
 
 		$('.top-cate-wrapper .content').css('width',totalW+'px');

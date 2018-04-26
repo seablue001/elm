@@ -3,7 +3,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 module.exports = {
 	entry: {
-		index: './src/js/index.js'
+		index: './src/js/index.js',
+		resDetail: './src/js/resDetail.js'
 	},
 	plugins:[	
 		new CleanWebpackPlugin(['dist']),
@@ -13,6 +14,13 @@ module.exports = {
 			template: './src/index.html',
 			inject: 'body',
 			chunks: ['index']
+		}),
+		new HtmlWebpackPlugin({
+			title: '商家详情',
+			filename: 'resDetail.html',
+			template: './src/resDetail.html',
+			inject: 'body',
+			chunks: ['resDetail']
 		})
 	],
 	output: {

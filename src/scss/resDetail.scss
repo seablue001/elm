@@ -1,0 +1,56 @@
+@import 'common.scss';
+.shop-header{
+	&-nav{
+		height: 60px;
+		padding:6px 8px;
+		box-sizing: border-box;
+		background: url("https://fuss10.elemecdn.com/f/79/8dd45700cfa53ad3cb47e7987065ajpeg.jpeg?imageMogr/format/webp/thumbnail/!40p/blur/50x40/") no-repeat;
+		background-size:cover;
+		&::before{
+			content: "";
+		    position: absolute;
+		    left: 0;
+		    right: 0;
+		    top: 0;
+		    bottom: 0;
+		    height: inherit;
+		    background-color: rgba(119,103,137,.43);
+		}
+		svg{
+			position: absolute;
+			width:25px;
+			height:25px;
+		}
+	}
+
+	&-info{
+		text-align: center;
+		position:relative;
+		z-index: 1000;
+		img{
+			width:65px;
+			height:65px;
+			margin-top: -45px;
+		}
+		&-text{
+			h2{
+				font-size:20px;
+			}
+			div{
+				font-size:12px;
+				margin-top:6px;
+			}
+			p{
+				width:218px;
+				overflow:hidden;
+				text-overflow:ellipsis;
+				white-space:nowrap;
+				font-size:12px;
+				margin:0 auto;
+				margin-top:8px;
+				margin-bottom:10px;
+				color:#999;
+			}
+		}
+	}
+}

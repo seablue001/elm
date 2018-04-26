@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #8e8e93;
+}
+
+input, button {
+  border: 0;
+  outline: 0;
+}
+
+.footer {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+.footer a {
+  flex: 1;
+  padding-top: 5px;
+  padding-bottom: 3px;
+}
+.footer a.active {
+  color: #0089dc;
+}
+
+.shop-header-nav {
+  height: 60px;
+  padding: 6px 8px;
+  box-sizing: border-box;
+  background: url("https://fuss10.elemecdn.com/f/79/8dd45700cfa53ad3cb47e7987065ajpeg.jpeg?imageMogr/format/webp/thumbnail/!40p/blur/50x40/") no-repeat;
+  background-size: cover;
+}
+.shop-header-nav::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: inherit;
+  background-color: rgba(119, 103, 137, 0.43);
+}
+.shop-header-nav svg {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+}
+.shop-header-info {
+  text-align: center;
+  position: relative;
+  z-index: 1000;
+}
+.shop-header-info img {
+  width: 65px;
+  height: 65px;
+  margin-top: -45px;
+}
+.shop-header-info-text h2 {
+  font-size: 20px;
+}
+.shop-header-info-text div {
+  font-size: 12px;
+  margin-top: 6px;
+}
+.shop-header-info-text p {
+  width: 218px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 12px;
+  margin: 0 auto;
+  margin-top: 8px;
+  margin-bottom: 10px;
+  color: #999;
+}
+
+/*# sourceMappingURL=resDetail.css.map */
